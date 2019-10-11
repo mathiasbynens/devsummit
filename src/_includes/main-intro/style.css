@@ -6,7 +6,7 @@
   padding: 4.4rem var(--side-margin);
 
   @media (min-width: 720px) {
-    height: 90vh;
+    min-height: 90vh;
     display: grid;
     grid-template-columns: minmax(450px, calc(46% - 4rem)) 1fr;
     grid-column-gap: 4rem;

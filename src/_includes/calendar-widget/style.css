@@ -7,6 +7,7 @@
   align-items: center;
   justify-content: center;
   padding: 3rem 2rem;
+  border: 1px solid var(--lessdarkoffwhite);
   box-shadow: 0 10px 36px rgba(0, 0, 0, 0.13);
   @media (min-width: 720px) {
     box-shadow: var(--lg-hueless-shadow);
@@ -22,7 +23,7 @@
 }
 
 .icon {
-  font-family: 'Google Sans', roboto, sans-serif;
+  font-family: google sans, roboto, sans-serif;
   background: var(--blue);
   border-radius: 0.9rem;
   width: 5.8rem;
@@ -75,7 +76,7 @@
   content: '';
   display: inline-block;
   margin-right: 0.2em;
-  background: url('confboxAsset(assets/clock.svg)');
+  background: url('confboxAsset(/assets/clock-icon.svg)');
   background-size: contain;
   width: var(--icon-size);
   height: var(--icon-size);

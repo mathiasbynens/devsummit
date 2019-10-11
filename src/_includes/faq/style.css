@@ -28,6 +28,7 @@
   overflow: hidden;
   border-radius: 1rem;
   box-shadow: var(--hueless-shadow);
+  border: 1px solid var(--lessdarkoffwhite);
   padding: 0 1.6rem;
   margin: 2rem 0;
   font-size: 0.8rem;

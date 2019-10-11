@@ -30,14 +30,10 @@ module.exports = {
    */
   twitter: '@ChromiumDev',
   /**
-   * The name of the conference
-   */
-  conferenceName: 'Chrome Dev Summit 2019',
-  /**
    * Timezone of the conference, in the form [+-]HHMM.
    * Examples: -0700, +0100, +0530
    */
-  timezone: '-0700',
+  timezone: '-0800',
   /**
    * Start of conference in the above timezone, in the format: YYYY/MM/DD HH:mm.
    */

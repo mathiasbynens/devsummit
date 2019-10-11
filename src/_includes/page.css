@@ -30,6 +30,8 @@
   padding: 2rem var(--side-margin);
   margin-top: 3rem;
   background: var(--white);
+  border-top: 1px solid var(--lessdarkoffwhite);
+  border-bottom: 1px solid var(--lessdarkoffwhite);
 
   p {
     max-width: 60ch;
@@ -49,6 +51,7 @@
     background: var(--white);
     padding: 1.6rem 1.8rem;
     box-shadow: var(--lg-hueless-shadow);
+    border: 1px solid var(--lessdarkoffwhite);
     border-radius: 1rem;
 
     & :first-child {

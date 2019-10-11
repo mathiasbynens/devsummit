@@ -39,6 +39,7 @@
 }
 .tag {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.13);
+  border: 1px solid var(--lessdarkoffwhite);
   color: var(--darkgrey);
 }
 
@@ -108,9 +109,12 @@
   background: var(--white);
   padding: 0.3rem var(--side-margin);
   margin-bottom: 4rem;
+  border-top: 1px solid var(--lessdarkoffwhite);
+  border-bottom: 1px solid var(--lessdarkoffwhite);
+
   @media (min-width: 960px) {
     box-shadow: var(--lg-hueless-shadow);
-
+    border: 1px solid var(--lessdarkoffwhite);
     grid-column: 2 / span 1;
     margin: 0;
     padding: 0.3rem 1.5rem;

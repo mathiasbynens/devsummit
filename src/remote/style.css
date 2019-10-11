@@ -1,0 +1,45 @@
+:root {
+  --squiggle-display: block;
+  --squiggle-url: url('confboxAsset(/assets/squiggles/1.svg)');
+}
+
+.icon-link {
+  display: inline-flex;
+  align-items: center;
+
+  &::before {
+    content: '';
+    --size: 1.7em;
+    width: var(--size);
+    height: var(--size);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    background-image: url('confboxAsset(/assets/youtube-icon.svg)');
+    margin-right: 0.5rem;
+  }
+}
+
+.heading {
+  padding-bottom: 1px;
+}
+
+.module {
+  padding-bottom: 5rem;
+
+  @media (min-width: 720px) {
+    padding-bottom: 7rem;
+  }
+
+  @media (min-width: 1020px) {
+    padding-bottom: 1px;
+  }
+}
+
+.no-margin-between {
+  margin-bottom: 0;
+
+  & + * {
+    margin-top: 0;
+  }
+}
