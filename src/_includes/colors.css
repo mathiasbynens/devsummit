@@ -21,4 +21,23 @@
   --red: #d93025;
   --red-a25: rgba(217, 48, 37, 0.25);
   --orange: #f9ab00;
+
+  @media (prefers-color-scheme: dark) {
+    --blue: hsl(214 30% 51%);
+    --lightblue: hsl(213, 57%, 10%);
+    --darkblue: hsl(214, 80%, 59%);
+
+    --white: hsl(200 10% 10%);
+    --offwhite: hsl(200 10% 13%);
+    --lessdarkoffwhite: hsl(200 10% 16%);
+    --lesslessdarkoffwhite: hsl(200 10% 20%);
+    --darkoffwhite: hsl(200 10% 25%);
+    --lightlightgrey: hsl(200 10% 40%);
+    --lightgrey: hsl(200 10% 50%);
+    --midgrey: hsl(200 10% 60%);
+    --grey: hsl(200 10% 70%);
+    --darkgrey: hsl(200 10% 75%);
+    --offblack: hsl(200 10% 80%);
+    --black: hsl(200 10% 90%);
+  }
 }

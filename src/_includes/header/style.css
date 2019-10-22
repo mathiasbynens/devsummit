@@ -1,5 +1,5 @@
 .root {
-  background: #fff;
+  background: var(--white);
   position: relative;
   z-index: 1;
   padding-bottom: 1px;
@@ -121,6 +121,10 @@
     height: var(--size);
     background: url('confboxAsset(/assets/notify-icon.svg)') no-repeat;
     background-size: contain;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    background-color: var(--offwhite);
   }
 }
 

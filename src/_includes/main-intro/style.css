@@ -11,7 +11,7 @@
     grid-template-columns: minmax(450px, calc(46% - 4rem)) 1fr;
     grid-column-gap: 4rem;
     align-items: center;
-    background: linear-gradient(to bottom, #fff, var(--offwhite));
+    background: linear-gradient(to bottom, var(--white), var(--offwhite));
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -94,6 +94,10 @@
     max-width: 560px;
     background-size: contain;
     margin: 0 auto;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    filter: invert() contrast(50%);
   }
 }
 
