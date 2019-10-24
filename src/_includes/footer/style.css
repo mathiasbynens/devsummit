@@ -1,21 +1,31 @@
 .root {
   --icon-size: 1.6em;
   padding-bottom: 0;
-  padding-top: 1.8rem;
+  padding-top: 6rem;
 
   @media (min-width: 720px) {
     display: grid;
     grid-template-rows: 1fr auto auto;
     grid-template-columns: 1fr auto auto;
     grid-template-areas:
-      'logo    logo     logo'
-      'divider divider  divider'
-      'social  language legal';
+      'logo . nav'
+      'divider divider divider'
+      'social language legal';
+  }
+
+  @media (max-width: 840px) {
+    --side-margin: 2.4rem;
   }
 
   ul {
     list-style: none;
     padding: 0;
+  }
+
+  a:hover {
+    color: var(--darkgrey);
+    text-decoration: underline;
+    text-decoration-color: var(--blue);
   }
 }
 
@@ -86,7 +96,7 @@
       flex-direction: row;
       align-items: center;
       > span {
-        margin-right: 0.3em;
+        margin-right: 0.5em;
       }
     }
   }
@@ -136,4 +146,52 @@
   mask-repeat: no-repeat;
   -webkit-mask-position: center;
   mask-position: center;
+}
+
+.icon-twitter {
+  --icon: url('confboxAsset(/_includes/footer/assets/twitter.svg)');
+  &:hover {
+    background-color: var(--twitter);
+  }
+}
+
+.icon-youtube {
+  --icon: url('confboxAsset(/_includes/footer/assets/youtube.svg)');
+  &:hover {
+    background-color: var(--youtube);
+  }
+}
+
+.icon-email {
+  --icon: url('confboxAsset(/_includes/footer/assets/email.svg)');
+  &:hover {
+    background-color: var(--grey);
+  }
+}
+
+.footer-nav {
+  grid-area: nav;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 4rem;
+
+  @media (min-width: 720px) {
+    align-items: flex-end;
+    padding-bottom: 8rem;
+  }
+
+  > a {
+    color: var(--lightgrey);
+    text-decoration: none;
+
+    @media (min-width: 720px) {
+      font-size: 0.7rem;
+    }
+
+    &:not(:first-of-type) {
+      margin-top: 1rem;
+    }
+  }
 }
