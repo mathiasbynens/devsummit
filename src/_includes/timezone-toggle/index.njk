@@ -20,7 +20,12 @@
     {
       const form = document.currentScript.previousElementSibling;
       import('confboxAsset(/_includes/timezone-toggle/script/index.js)').then(
-        ({ enhance }) => enhance(form)
+        ({ enhance }) => {
+          enhance(form);
+          window.addEventListener('timezonechange', () => {
+            enhance(form);
+          });
+        }
       );
     }
   </script>
