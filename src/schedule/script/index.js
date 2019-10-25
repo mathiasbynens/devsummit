@@ -22,6 +22,10 @@ function render() {
 
 onChange(render);
 
+window.addEventListener('timezonechange', () => {
+  render();
+});
+
 if (getTimezoneOption() === 'local') {
   render();
   el.style.visibility = 'visible';
